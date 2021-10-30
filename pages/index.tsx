@@ -4,14 +4,10 @@ import Property from '../models/property/Property'
 import homeStyles from '../styles/Home.module.css'
 
 var today = new Date();
-
 var dd = today.getDate();
 var mm = today.getMonth() + 2;
 var y = today.getFullYear();
-
 var someFormattedDate = mm + '/'+ dd + '/'+ y;
-console.log(someFormattedDate)
-
 const completeDate = someFormattedDate;
 
 const propertyArray: Property[] = [
@@ -26,7 +22,7 @@ const Home: NextPage = () => {
         <h2>Current Properties</h2>
         <div className={homeStyles.property_list_container}>
           {propertyArray.map((property) => 
-            <Link key={property.id} href={'properties/' + property.id}>
+            <Link key={property.id} href={'properties/' + property.id} passHref>
             <div className={homeStyles.property_card}>
               <div className={homeStyles.property_card_header}>{property.propertyName}</div>
               <div className={homeStyles.property_card_image}>Property Image</div>

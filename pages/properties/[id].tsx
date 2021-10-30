@@ -52,7 +52,7 @@ export default function Property() {
             <h2>{propertyName} Projects</h2>
             {
                 projectArray?.map((project) =>
-                    <div className={propertyStyles.project_container}>
+                    <div key={project.id} className={propertyStyles.project_container}>
                         <div>{project.projectName}</div>
                         <div>Estimated Cost: {project.price}</div>
                     </div>
