@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <h2>Current Properties</h2>
         <div className={homeStyles.property_list_container}>
           {propertyArray.map((property) => 
-            <Link key={property.id} href={'properties/' + property.id} passHref>
+            <Link key={property.id} href={'/properties/' + property.id} passHref>
             <div className={homeStyles.property_card}>
               <div className={homeStyles.property_card_header}>{property.propertyName}</div>
               <div className={homeStyles.property_card_image}>Property Image</div>

@@ -2,7 +2,28 @@
     background-color: #ebeaeb;
     height:75px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 15px;
+}
+
+.header_container h1{
+    margin-left: 1rem;
+}
+
+.hamburger_menu_container span{
+    display:block;
+}
+
+.hamburger_line{
+    width: 40px;
+    height: 5px;
+    background-color: #ff5000;
+    margin:5px 0;
+    border-radius: 50px;
+}
+
+@media (min-width: 1024px){
+    .hamburger_menu_container{
+        display: none;
+    }
 }
