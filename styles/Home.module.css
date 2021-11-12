@@ -1,0 +1,41 @@
+.dashboard_container h2{
+    margin-bottom: 0;
+}
+
+.metric_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.metric_flex_item{
+    margin:1%;
+}
+
+.project_container{
+    margin:10% 0;
+}
+
+.project_list_container{
+    height: 200px;
+    background-color: lightgray;
+    border-radius: 15px;
+    display:flex;
+    align-items: center;
+    flex-flow: row;
+    overflow-x: auto;
+    border: 2px solid var(--orange);
+}
+
+.project_flex_item{
+    margin:10%;
+    width:80%;
+    height:60%;
+    background-color: white;
+    flex:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 3px solid lightgray;
+}

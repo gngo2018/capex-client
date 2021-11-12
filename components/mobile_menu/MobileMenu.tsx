@@ -11,13 +11,13 @@ export default function MobileMenu(props: MobileMenuProps) {
             <h2>Mobile Menu</h2>
             <div className={mobileMenuStyles.menu_item_container}>
                 <span> <a>Sign In</a> | <a>Join</a></span>
-                <Link href={'/properties'}>
+                <Link href={'/properties'} passHref>
                     <span onClick={() => props.isOpen(false)}>Properties</span>
                 </Link>
-                <Link href={'/projects'}>
+                <Link href={'/projects'} passHref>
                     <span onClick={() => props.isOpen(false)}>Projects</span>
                 </Link>
-                <Link href={'/metrics'}>
+                <Link href={'/metrics'} passHref>
                     <span onClick={() => props.isOpen(false)}>Metrics</span>
                 </Link>
             </div>
