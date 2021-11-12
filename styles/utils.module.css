@@ -1,0 +1,9 @@
+.header_icon_flex_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_icon_flex_container svg{
+    color: var(--orange);
+}

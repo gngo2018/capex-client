@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+  --orange: #ff5000;
+}
+
+
 html,
 body {
   padding: 0;

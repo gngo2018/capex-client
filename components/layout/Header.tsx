@@ -15,9 +15,11 @@ export const MobileMenuContext = createContext<MobileMenu>({
 })
 
 export const useMobileMenuContext = () => useContext(MobileMenuContext)
+
 interface HeaderProps{
     isOpen: (e: boolean) => void
 }
+
 export default function Header(props: HeaderProps) {
     const [menuIsOpen, setMenuIsOpen] = useState(false);
     
