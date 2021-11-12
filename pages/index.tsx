@@ -19,7 +19,7 @@ const propertyArray: Property[] = [
 const Home: NextPage = () => {
   return (
     <div className={homeStyles.container}>
-        <h2>Current Properties</h2>
+    <h2>Current Properties</h2>
         <div className={homeStyles.property_list_container}>
           {propertyArray.map((property) => 
             <Link key={property.id} href={'/properties/' + property.id} passHref>

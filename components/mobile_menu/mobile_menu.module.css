@@ -1,0 +1,16 @@
+.mobile_menu_container{
+    display: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: white;
+    padding:0 2rem;
+}
+
+.menu_item_container span{
+    display: block;
+    padding-left: 5%;
+    margin: 3% 0;
+    font-weight:500;
+}
